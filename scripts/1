@@ -1,9 +1,8 @@
 #!/bin/bash
-CODEDEPLOY_APPLICATION=chris-github-2
-CODEDEPLOY_DEPLOYMENTGROUP=chris-github2-dep
+CODEDEPLOY_APPLICATION=chris-github-new
+CODEDEPLOY_DEPLOYMENTGROUP=chris-github-2
 BUCKET=testncode
 HTTP_CODE=`curl --write-out '%{http_code}' -o /dev/null -m 10 -q -s http://localhost:80`
-echo $HTTP_CODE
 if [ "$HTTP_CODE" -eq "200" ];then
   echo "Successfully pulled root page." >> /tmp/test.txt
   exit 0;
