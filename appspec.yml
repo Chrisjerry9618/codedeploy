@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /opt/chris/chris/index.html
+  - source: /index.html
     destination: /var/www/chris
 hooks:
   BeforeInstall:
